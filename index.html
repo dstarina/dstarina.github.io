@@ -2,27 +2,164 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>David Starina</title>
+  <title>David Starina — Principal AI &amp; Solutions Architect</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Independent Principal AI &amp; Solutions Architect. 18+ years bridging enterprise backend, machine learning and LLM/RAG innovations.">
   <style>
-    body { font-family: -apple-system, system-ui, sans-serif; background: #06080d; color: #e5e7eb; margin: 0; min-height: 100vh; display: flex; align-items: center; justify-content: center; }
-    main { max-width: 560px; padding: 2rem; }
-    h1 { font-size: 2rem; margin: 0 0 0.5rem; }
-    p { color: #9ca3af; line-height: 1.6; }
-    a { color: #60a5fa; text-decoration: none; }
-    a:hover { text-decoration: underline; }
-    ul { list-style: none; padding: 0; }
-    li { margin: 0.5rem 0; }
+    :root {
+      --bg: #06080d;
+      --fg: #e5e7eb;
+      --muted: #9ca3af;
+      --accent: #60a5fa;
+      --card: rgba(255, 255, 255, 0.03);
+      --border: rgba(255, 255, 255, 0.08);
+    }
+    * { box-sizing: border-box; }
+    html, body { margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+      background:
+        radial-gradient(ellipse at top left, rgba(96, 165, 250, 0.08), transparent 50%),
+        radial-gradient(ellipse at bottom right, rgba(167, 139, 250, 0.06), transparent 50%),
+        var(--bg);
+      color: var(--fg);
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem 1.25rem;
+      line-height: 1.6;
+    }
+    main {
+      max-width: 640px;
+      width: 100%;
+    }
+    .eyebrow {
+      font-size: 0.8rem;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-bottom: 1rem;
+    }
+    h1 {
+      font-size: clamp(2rem, 5vw, 2.75rem);
+      margin: 0 0 0.5rem;
+      font-weight: 600;
+      letter-spacing: -0.02em;
+    }
+    .role {
+      font-size: 1.125rem;
+      color: var(--fg);
+      margin: 0 0 1.5rem;
+      font-weight: 500;
+    }
+    .tagline {
+      font-size: 1rem;
+      color: var(--muted);
+      margin: 0 0 2rem;
+    }
+    .focus {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 1.25rem 1.5rem;
+      margin: 0 0 2rem;
+    }
+    .focus-label {
+      font-size: 0.75rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-bottom: 0.5rem;
+    }
+    .focus-items {
+      color: var(--fg);
+      font-size: 0.98rem;
+    }
+    .availability {
+      background: linear-gradient(135deg, rgba(96, 165, 250, 0.08), rgba(167, 139, 250, 0.05));
+      border: 1px solid rgba(96, 165, 250, 0.2);
+      border-radius: 12px;
+      padding: 1.25rem 1.5rem;
+      margin: 0 0 2rem;
+    }
+    .availability-label {
+      font-size: 0.75rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 0.5rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    .dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: #22c55e;
+      box-shadow: 0 0 8px rgba(34, 197, 94, 0.6);
+    }
+    .meta {
+      color: var(--muted);
+      font-size: 0.9rem;
+      margin: 0 0 2rem;
+    }
+    .links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+    }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.65rem 1.1rem;
+      border-radius: 8px;
+      border: 1px solid var(--border);
+      background: var(--card);
+      color: var(--fg);
+      text-decoration: none;
+      font-size: 0.95rem;
+      transition: border-color 0.15s, background 0.15s, transform 0.15s;
+    }
+    .btn:hover {
+      border-color: var(--accent);
+      background: rgba(96, 165, 250, 0.08);
+      transform: translateY(-1px);
+    }
+    .btn svg { flex-shrink: 0; }
   </style>
 </head>
 <body>
   <main>
-    <h1>David Starina</h1>
-    <p>Independent Principal AI &amp; Solutions Architect.</p>
-    <ul>
-      <li><a href="/ateam-case-study/">Oracle Forms &rarr; Java EE AI Migration Pipeline (case study)</a></li>
-      <li><a href="mailto:david@starina.si">david@starina.si</a></li>
-    </ul>
+    <div class="eyebrow">David Starina</div>
+    <h1>Principal AI &amp; Solutions Architect</h1>
+    <p class="role">Independent · Fractional · Remote</p>
+    <p class="tagline">18+ years bridging enterprise backend, machine learning, and LLM/RAG innovations.</p>
+
+    <div class="focus">
+      <div class="focus-label">Tech focus</div>
+      <div class="focus-items">Secure RAG architectures · LLM orchestration · Enterprise AI governance · Legacy-to-AI modernization</div>
+    </div>
+
+    <div class="availability">
+      <div class="availability-label"><span class="dot"></span>Availability</div>
+      <div>Currently available for select remote B2B contracts, fractional architecture leadership, and strategic AI consulting.</div>
+    </div>
+
+    <p class="meta">Ljubljana, Slovenia · CET</p>
+
+    <div class="links">
+      <a class="btn" href="https://www.linkedin.com/in/david-starina/" target="_blank" rel="noopener">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+        LinkedIn
+      </a>
+      <a class="btn" href="mailto:david@starina.si">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+        david@starina.si
+      </a>
+    </div>
   </main>
 </body>
 </html>
